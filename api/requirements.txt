@@ -1,0 +1,7 @@
+setuptools==59.5.0
+fastapi==0.103.2
+torch==1.10
+pytorch_transformers==1.2.0
+transformers==3.4.0
+hydra-core==1.0.6
+pyld==2.0.3

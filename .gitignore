@@ -1,0 +1,11 @@
+**/__pycache__
+.env
+.env.*
+.idea
+.vscode
+**/logs
+**/models
+
+**/node_modules
+**/dist
+**/public
