@@ -1,13 +1,13 @@
 # simple knowledge graph generator
 
-输入文本并生成知识图谱，包含前后端。nlp部分基于[deepke-cnschema](https://github.com/zjunlp/DeepKE/blob/main/example/triple/cnschema/README_CN.md)，前端展示基于[KGview](https://github.com/molamolaxxx/KGView)。
+输入文本生成知识图谱，包含前后端。nlp部分基于[deepke-cnschema](https://github.com/zjunlp/DeepKE/blob/main/example/triple/cnschema/README_CN.md)，前端展示基于[KGview](https://github.com/molamolaxxx/KGView)。
 
 前端部分[graphxr](https://www.kineviz.com/graphxr)也是不错的选择，但是要注册就没选。
 
 ## 图片展示
 （“刘姥姥进大观园”是预置的输入，这一章节内容对应的triples会被直接返回无需再次生成，减少等待时间）
-![](./readme-assets/input.png)
-![](./readme-assets/show.png)
+![](./readme/input.png)
+![](./readme/show.png)
 
 
 ## 项目结构
