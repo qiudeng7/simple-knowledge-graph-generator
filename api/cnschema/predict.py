@@ -6,6 +6,8 @@ from hydra import utils
 import json
 from pyld import jsonld
 
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from preprocess import  _handle_relation_data , _lm_serialize
 from utils import  load_csv
 from LMModel import LM
