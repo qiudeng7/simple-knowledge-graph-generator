@@ -6,7 +6,7 @@ RUN git clone https://github.com/qiudeng7/simple-knowledge-graph-generator.git
 
 WORKDIR /root/simple-knowledge-graph-generator/vue
 RUN npm --registry=https://registry.npm.taobao.org install && npm run build
-RUN cp -r dist/* ../api/static
+RUN cp -r dist/* ../api/static/input
 
 # 第二阶段 准备创建后端运行环境
 FROM docker.qiudeng.cc/pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime

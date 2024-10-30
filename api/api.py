@@ -6,25 +6,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from KnowledgeGraph import KnowledgeGraph
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
-
-
-@app.get("/show")
-async def redirect_to_new_path():
-    return RedirectResponse(url="/static/show/index.html")
-
-@app.get("/assets/index-C1uoPy3x.js")
-async def redirect_to_new_path():
-    return RedirectResponse(url="/static/assets/index-C1uoPy3x.js")
-@app.get("/assets/index-B_RRt6cs.css")
-async def redirect_to_new_path():
-    return RedirectResponse(url="/static/assets/index-B_RRt6cs.css")
-
-
-@app.get("/")
-async def redirect_to_new_path():
-    return RedirectResponse(url="/static/index.html")
-
+app.mount("/", StaticFiles(directory="static/input",html=True), name="input")
+app.mount("/show",StaticFiles(directory="static/show",html=True),name="show")
 
 class Item(BaseModel):
     text: str
